@@ -1,5 +1,176 @@
+:root {
+  --page-bg: #23258f;
+  --card-bg: #5c63dc;
+  --button-bg: #5865f2;
+  --text: #ffffff;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  background: var(--page-bg);
+  color: var(--text);
+  font-family: 'DM Sans', sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.page {
+  width: 512px;
+  background: var(--page-bg);
+}
+
+img,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+.wrapper {
+  width: calc(100% - 44px);
+  margin: 0 auto;
+}
+
+.hero {
+  width: 100%;
+}
+
+.hero-banner {
+  width: 100%;
+}
+
+.intro {
+  padding: 72px 0 58px;
+  text-align: center;
+}
+
+.intro h1,
+.feature-card h2 {
+  font-family: 'Sigmar', cursive;
+  font-weight: 400;
+  line-height: 0.96;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.intro h1 {
+  font-size: 3.55rem;
+}
+
+.intro p {
+  max-width: 410px;
+  margin: 28px auto 0;
+  font-size: 1rem;
+  line-height: 1.34;
+  font-weight: 500;
+}
+
+.cta-group {
+  margin-top: 34px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: center;
+}
+
+.btn {
+  width: 392px;
+  min-height: 60px;
+  padding: 16px 22px;
+  border-radius: 18px;
+  text-decoration: none;
+  font-size: 1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.btn-light {
+  background: #f2f3f5;
+  color: #111111;
+}
+
+.btn-primary {
+  background: var(--button-bg);
+  color: #ffffff;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+  padding-top: 24px;
+  padding-bottom: 70px;
+  
+}
+
+.feature-card {
+  position: relative;
+  padding: 96px 30px 34px;
+  background: linear-gradient(180deg, #6972e6 0%, #5f68df 100%);
+  border-radius: 38px;
+}
+
+.card-icon {
+  position: absolute;
+  top: -31px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 104px;
+  height: auto;
+}
+
+.card-copy {
+  padding: 0 4px;
+}
+
+.feature-card h2 {
+  font-size: 3rem;
+}
+
+.feature-card p {
+  margin-top: 24px;
+  font-size: 1rem;
+  line-height: 1.32;
+  font-weight: 500;
+}
+
+.card-media {
+  margin-top: 34px;
+  border-radius: 34px;
+  padding: 12px;
+  overflow: hidden;
+}
+
+.media-pink {
+  background: radial-gradient(circle at 50% 100%, #ff47c4 0%, #ff47c4 20%, #7f2e66 48%, #5a2445 70%, #452134 100%);
+}
+
+.media-green {
+  background: radial-gradient(circle at 50% 100%, #2cf17c 0%, #2cf17c 12%, #13aa64 20%, #06583f 42%, #003a2e 65%, #012f28 100%);
+}
+
+.card-media video {
+  width: 100%;
+  border-radius: 22px;
+  object-fit: cover;
+}
+
+.media-pink video {
+  aspect-ratio: 1 / 0.73;
+}
+
+.media-green video {
+  aspect-ratio: 1 / 0.8;
+}
+
