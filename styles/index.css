@@ -119,6 +119,7 @@ video {
   padding: 96px 30px 34px;
   background: linear-gradient(180deg, #6972e6 0%, #5f68df 100%);
   border-radius: 38px;
+  overflow: visible;
 }
 
 .card-icon {
@@ -128,6 +129,7 @@ video {
   transform: translateX(-50%);
   width: 104px;
   height: auto;
+  z-index: 2;
 }
 
 .card-copy {
@@ -166,11 +168,13 @@ video {
   object-fit: cover;
 }
 
-.media-pink video {
+.media-pink video,
+.media-pink img {
   aspect-ratio: 1 / 0.73;
 }
 
-.media-green video {
+.media-green video,
+.media-green img {
   aspect-ratio: 1 / 0.8;
 }
 
